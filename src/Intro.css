@@ -1,0 +1,31 @@
+.startingScreencontainer{ 
+    background-color: white;
+    height: 70vh ; 
+    width: 50vw; 
+    border: solid black 2px; 
+    border-radius: 10px; 
+    transform: translate(50%,20%);
+    left: 50%; 
+    top:50%; 
+    display: flex; 
+    justify-content: space-around; 
+    align-items: center; 
+     
+}
+.inputChoice{ 
+    height: 60vh; 
+    width: 20vw; 
+    border: solid black 2px; 
+    border-radius: 15px; 
+
+
+}
+.inputChoice img{ 
+    height: 100%;
+    width:100%;  
+    object-fit: cover; 
+    margin: auto;
+    border-radius: 15px; 
+
+
+}

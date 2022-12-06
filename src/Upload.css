@@ -1,0 +1,19 @@
+.container{ 
+    background-color: white;
+    border: solid black 2px; 
+    border-radius: 10px; 
+    transform: translate(-50%,20%);
+    left: 50%; 
+    top:50%; 
+    position:relative;
+    height: 70vh; 
+    width: 50vw; 
+}
+.container form{ 
+    position: absolute;
+    bottom: 0;
+    margin: none;
+    left:50%;
+    transform: translateX(-50%);
+    padding-bottom: 1rem; 
+}

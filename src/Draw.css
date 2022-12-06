@@ -1,0 +1,9 @@
+.drawContainer{ 
+    background-color: white;
+    border: solid black 2px; 
+    border-radius: 10px; 
+    transform: translate(-50%,20%);
+    left: 50%; 
+    top:50%; 
+    position:relative;
+}
