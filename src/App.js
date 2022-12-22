@@ -1,6 +1,5 @@
 import './App.css';
-import Intro from './Intro'
-import Draw from './Draw'
+import Intro from './Children -intro/Intro'
 
 function App() {
   return (

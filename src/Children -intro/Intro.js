@@ -1,7 +1,7 @@
 import './Intro.css'
 import {useState} from 'react'
-import Draw from './Draw'
-import Upload from './Upload'
+import Draw from './Children-draw-upload/Draw'
+import Upload from './Children-draw-upload/Upload'
 const Intro = ()=> {
     const [draw,setDraw] = useState(false);
     const [upload, setUpload] = useState(false);

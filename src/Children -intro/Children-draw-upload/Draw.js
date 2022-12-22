@@ -36,6 +36,7 @@ const contextref = useRef(null)
     setIsDrawing(false)
     contextref.current.closePath()  
     setFinishedDraw(true)
+    console.log(mousePos)
   }
 
   
@@ -49,10 +50,9 @@ const contextref = useRef(null)
       const boundrect = containerref.current.getBoundingClientRect();
       contextref.current.beginPath()
       setMousePos((mousePos)=>({x: [...mousePos.x, event.clientX], y:[...mousePos.y, event.clientY]}));
-      console.log(mousePos)
+
       contextref.current.lineTo((event.clientX-boundrect.left)/(0.5*window.devicePixelRatio), (event.clientY-boundrect.top)/(0.5*window.devicePixelRatio))
       contextref.current.stroke()
-      console.log(finishedDraw)
       
   }
   

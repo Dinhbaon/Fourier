@@ -1,0 +1,36 @@
+.dropzonecontainer{ 
+    background-color: white;
+    border: solid black 2px; 
+    border-radius: 10px; 
+    transform: translate(-50%,20%);
+    left: 50%; 
+    top:50%; 
+    position:relative;
+    height: 70vh; 
+    width: 50vw; 
+}
+.dropzonecontainer form{ 
+    position: absolute;
+    bottom: 0;
+    margin: none;
+    left:50%;
+    transform: translateX(-50%);
+    padding-bottom: 1rem; 
+}
+.button{ 
+    background-color: white; /* Green */
+    border: solid black 2px ;
+    color: black;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    transition-duration: 0.4s;
+    }
+      
+.button:hover {
+    background-color: black; 
+    color: white;
+    cursor: pointer;
+}
