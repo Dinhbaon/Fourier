@@ -11,6 +11,7 @@ function Dropzone({submit}) {
 <div key = {file.path}>
       {file.path}
       <img  className="uploadedimg"
+            id = "uploadedimg"
             style={{}}
             src={file.preview}
             alt = "User uploaded" />  
@@ -31,7 +32,7 @@ console.log(submit)
 
       </div>
       {submit ?
-    <Calccountours files={files}/>:null}
+    <Calccountours/>:null}
     </div>
   );
 }

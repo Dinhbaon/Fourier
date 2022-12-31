@@ -4,8 +4,6 @@ import {useState} from 'react'
 const Upload = () =>{ 
 
     const [submit, setSubmit] = useState(false)
-console.log(submit)
-
     return(
         <div>
  <div className="dropzonecontainer" style={{display: submit ? 'none' : 'block'}}>
