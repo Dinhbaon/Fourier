@@ -1,6 +1,6 @@
 import React from "react";
-import {useEffect} from "react"
 import { fft, ifft } from "ezfft"
+import './calcContours.css'
 
 
 const Calccountours=() =>{
@@ -12,7 +12,6 @@ const Calccountours=() =>{
       let contours = new window["cv"].MatVector();
       let hierarchy = new window["cv"].Mat();
       window["cv"].findContours(cvimg, contours, hierarchy, window["cv"].RETR_CCOMP, window["cv"].CHAIN_APPROX_SIMPLE);
-      let contour =contours.get(0)
       const pointsX = []
       const pointsY = []
       for (let i = 0; i < contours.size(); ++i) {
@@ -25,12 +24,12 @@ const Calccountours=() =>{
         }
       }
 
-    let zippoint = pointsX.map((a,e)=>[a,pointsY[e]])
+
 console.log(pointsX)
 console.log(fft(pointsX, 1))
 console.log(fft(pointsY,1))
     return(
-<div></div>
+<div className="circle"></div>
     )
 
 }

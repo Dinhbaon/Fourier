@@ -1,7 +1,7 @@
 import React, { useEffect } from "react";
 import { useDropzone } from "react-dropzone";
 import "./Dropzone.css";
-import Calccountours from './calcContours.js'
+import Calccountours from './calcContoursUpload.js'
 function Dropzone({submit}) {
   const { getRootProps, getInputProps, acceptedFiles } =useDropzone({onDrop: acceptedFiles => {
     acceptedFiles.map(file => Object.assign(file, {
