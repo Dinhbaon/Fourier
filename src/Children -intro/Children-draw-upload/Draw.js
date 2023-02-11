@@ -1,6 +1,6 @@
 import './Draw.css'
 import React, { useState,useEffect,useRef } from 'react'
-import CalcCountoursDraw from './Children-calcContoursDraw/calcContoursDraw.js';
+import CalcFourierDraw from './Children-calcContoursDraw/calcFourierDraw.js';
 const Draw = () => { 
  
 const containerref = useRef(null);
@@ -56,12 +56,11 @@ const contextref = useRef(null)
       
   }
 
-
 return(
 
 <div>
 {finishedDraw ?
-<CalcCountoursDraw points = {mousePos}/>: <canvas className="drawContainer" id="drawContainer" ref={containerref}
+<CalcFourierDraw points = {mousePos}/>: <canvas className="drawContainer" id="drawContainer" ref={containerref}
 onMouseDown={draw_on_click}
 onMouseUp={toggle_draw}
 onMouseMove={isDrawing ? on_move : undefined}></canvas> }

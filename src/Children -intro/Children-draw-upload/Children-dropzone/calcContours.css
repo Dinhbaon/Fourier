@@ -1,11 +1,12 @@
 .circle{
-    background-color: black;
     border-radius: 50%;
-    border: solid white 2px; 
-    position:absolute;
-    background: rgba(255, 255, 255, 0);
-    color: rgba(0, 0, 0,0);
+    border: solid rgba(191, 191, 191,1) 2px; 
+    position:relative;
+    background-color: rgba(238, 238, 238,0);
+    color: rgba(0, 0, 0,0);   
 }
+
 .lines{ 
     position:absolute;
+    z-index:1;
 }

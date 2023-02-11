@@ -1,8 +1,8 @@
 import React, { useEffect } from "react";
 import { useDropzone } from "react-dropzone";
 import "./Dropzone.css";
-import Calccountours from './calcContoursUpload.js'
-function Dropzone({submit}) {
+
+function Dropzone() {
   const { getRootProps, getInputProps, acceptedFiles } =useDropzone({onDrop: acceptedFiles => {
     acceptedFiles.map(file => Object.assign(file, {
       preview: URL.createObjectURL(file)
@@ -18,22 +18,16 @@ function Dropzone({submit}) {
 </div>
   ));
 
-useEffect(()=>{
-console.log(submit)
-  },[submit])
-  return (
+  return (    
     <div className="container">
-            <aside>
+      <aside>
         <ul >{files}</ul>
       </aside>
       <div {...getRootProps({ className: "dropzone" })}>
         <input {...getInputProps()} />
         <p>Click or Drag your Image here</p>
-
       </div>
-      {submit ?
-    <Calccountours/>:null}
-    </div>
+  </div>
   );
 }
 export default Dropzone;
