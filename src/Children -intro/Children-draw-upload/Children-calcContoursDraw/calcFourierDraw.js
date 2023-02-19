@@ -26,7 +26,8 @@ const calcFourierDraw = ({points}) => {
     fourier.x.frequency.amplitude = fourier.x.frequency.amplitude.sort((a,b)=>b-a).map(a=>a/3)
     fourier.y.frequency.amplitude = fourier.y.frequency.amplitude.sort((a,b)=>b-a).map(a=>a/3)
     
- 
+
+    console.log(fourier)
 
 
     return(
@@ -34,7 +35,7 @@ const calcFourierDraw = ({points}) => {
             <div style={{position: `absolute`}}>
         <div className="circle"style={{transform :`translate(${300-fourier.x.frequency.amplitude[0]}px, ${75-fourier.x.frequency.amplitude[0]}px)`,
                                 width: `${2*fourier.x.frequency.amplitude[0]}px`, 
-                                height:`${2*fourier.x.frequency.amplitude[0]}px`}} > <CalcCountoursDrawX fourier = {fourier} translateX={{x:250-fourier.x.frequency.amplitude[0], y:75-fourier.x.frequency.amplitude[0],}} translateY={{x:0, y:0}}/> </div>
+                                height:`${2*fourier.x.frequency.amplitude[0]}px`}} > <CalcCountoursDrawX fourier = {fourier} translateX={{x:250-fourier.x.frequency.amplitude[0], y:75-fourier.x.frequency.amplitude[0],}} translateY={{x:0, y:0}} length={fourier.x.frequency.amplitude.length}/> </div>
             </div>
             <div style={{position: `absolute`}}>
         <div className="circle"style={{transform :`translate(${75-fourier.y.frequency.amplitude[0]}px, ${250-fourier.y.frequency.amplitude[0]}px)`,
